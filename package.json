@@ -1,0 +1,16 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "concat:css": "concat -o css/main.concat.css css/icon-font.css css/main.css"
+  },
+  "author": "Adison P.",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concat": "^1.0.3"
+  }
+}

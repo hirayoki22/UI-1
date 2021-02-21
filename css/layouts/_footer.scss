@@ -1,0 +1,76 @@
+.footer {
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  background-color: $color-grey-dark-3;
+  color: $color-grey-light-1;
+  
+  @include respond(tab-port) {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+
+  &__logo-box {
+    margin-bottom: 8rem;
+
+    
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__logo {
+    user-select: none;
+  }
+
+  &__navigation {
+    display: inline-block;
+    padding-top: 2rem;
+    border-top: 1px solid $color-grey-dark-4;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    color: $color-grey-light-1;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary, 
+      $color-primary-dark
+    );
+    transition: all .3s ease;
+    -webkit-background-clip: text;
+    backface-visibility: hidden;
+
+    &:hover {
+      color: transparent;
+      text-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+    }
+  }
+
+  &__copyright {
+    margin-left: auto;
+    width: 80%;
+    float: right;
+    padding-top: 2rem;
+    border-top: 1px solid $color-grey-dark-4;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+    }
+  }
+}
